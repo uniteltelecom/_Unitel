@@ -1,0 +1,340 @@
+/*______________________________________________________________
+ |
+ | Estilos Gerais
+ |______________________________________________________________
+*/
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+html, body { height: 100%; }
+body {
+    margin-top: 50px;
+    background: #fff;
+    background-size: cover;
+}
+body#zero { background: #fff url(../img/bg-0.jpg) center center no-repeat fixed; }
+h1, h2, h3, h4, h5, h6, p, blockquote, ul { font-family: 'Ubuntu', sans-serif;  }
+
+/*______________________________________________________________
+ |
+ | Barra de navegação
+ |______________________________________________________________
+*/
+.front-menu { border-bottom: none; background-color: rgba(0,0,0,.9);}
+#logo { padding-top: 5px; }
+
+/*______________________________________________________________
+ |
+ | Rodapé
+ |______________________________________________________________
+*/
+.rodape { 
+    border-top: 3px groove #fff;
+    background: rgb(14, 51, 5);
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 100, 0, .5);
+}
+.rodape footer { margin: 25px 0; }
+.rodape footer h4 { margin-bottom: 20px; }
+.rodape footer h4 span { margin-right: 20px; }
+.rodape .caminho h4 { font-family: 'Satisfy', cursive; font-size: 150%; }
+.rodape .caminho { background: url(../img/borda.png) 50% 0 repeat-x; padding-top: 3em; }
+.rodape footer a { color: #fff; }
+.rodape footer a:hover { text-decoration: none; color: #de0;}
+.rodape .links { list-style: none; }
+.rodape .links li { margin-bottom: 10px; }
+.rodape .links li a { padding: 10px; }
+.rodape footer p { padding-top: 1em; }
+
+/*______________________________________________________________
+ |
+ | /index/jumbotron
+ |______________________________________________________________
+*/
+.jumbotron {
+	background: #000 url(../img/Office-2.jpg) top left no-repeat;
+	background-size: cover;
+	max-height: 600px;
+	padding: 60px 0;
+    margin: 0;
+	color: #fff;
+}
+.jumbotron .row h1, .jumbotron .row h3{
+	text-shadow: 1px 1px 2px rgba(30,30,30,.5);
+	margin-top: 40px;
+	font-weight: normal;
+}
+.jumbotron .row h3 {
+	margin-top: 50px;
+	margin-bottom: 40px;
+    line-height: 1.55em
+}
+.jumbotron h3 span { background: rgba(0,0,0,.5); padding: 5px; }
+.jumbotron .row a {
+	background: rgba(255,255, 255, .4);
+	border: 1px solid #2c3e50;
+	text-shadow: 1px 1px 2px rgba(30,30,30,.5);
+	padding: 15px 20px;
+    color: inherit;
+}
+.jumbotron .row a:hover { 
+    background: rgba(255,255, 255, .6);
+    text-shadow: 1px 1px 2px rgba(30,30,30,1);
+}
+
+.jumbotron .btn-default { border-radius: 0; }
+
+/*______________________________________________________________
+ |
+ | /index/sobre
+ |______________________________________________________________
+*/
+.sobre { padding: 0 0 30px 0; background-color: #fff; }
+.sobre .glyphicon { padding: 0 20px 20px 0; }
+.sobre .row div { border-bottom: 1px groove #ddd; margin-bottom: 2em; padding-bottom: 1em; }
+.sobre .row div p { text-align: justify; }
+.sobre .row div:first-child h4 { padding-top: 20px; }
+.sobre .row div:last-child { border: 0; }
+
+/*______________________________________________________________
+ |
+ | /index/projetos
+ |______________________________________________________________
+*/
+.projetos {
+    position: relative;
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    height: 400px;
+}
+.projetos .container { height: 100%; }
+.projetos h3, .projetos p { padding: 10px; }
+.projetos h3 { 
+    width: 98%; 
+    margin-left: 3px; 
+    border-bottom: 1px solid #fff; 
+    text-shadow: 1px 1px 1px #000;
+}
+.projetos h3 span { margin-right: 1em; }
+.projetos p a { color: #f90; }
+.projetos p a:hover { 
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+}
+.projetos .carousel-indicators {
+    font: 100% 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 2em;
+    z-index: 15;
+    width: 90%;
+    margin-left: -45%;
+    text-align: center;
+    list-style: none;
+    height: 50px;
+}
+.projetos .carousel-indicators li {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    text-indent: 0;
+    cursor: pointer;
+    background-color: rgb(10,95,127);
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: .6em;
+    margin-right: 3px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+}
+.projetos .carousel-indicators .active {
+    width: 30%;
+    height: auto;
+    background: auto;
+    margin-right: 3px;
+}
+.projetos .slide { padding-top: 70px;}
+.projetos .carousel-control { display:none; }
+
+/*______________________________________________________________
+ |
+ | /sobre/page-header
+ |______________________________________________________________
+*/
+.page-header small {font-size: .5em;}
+
+/*______________________________________________________________
+ |
+ | Media Queries
+ |______________________________________________________________
+*/
+@media (min-width: 768px) {
+    .jumbotron {
+        background: #000 url(../img/Office-5.jpg) top left no-repeat;
+        background-size: cover;
+        max-height: 600px;
+        padding: 45px 0;
+    }
+    .jumbotron .row h1 { text-shadow: 3px 3px 5px #000; }
+    .sobre .row div:first-child h4 { padding-top: 0; }
+    .sobre .row div { padding-top: 30px; border: 0; }
+    .sobre .row div:last-child { padding-top: 0; margin-top: -1em;}
+	.projetos .item img { display: block; margin: 1.5em 1em 0 0}
+    .projetos .carousel-indicators {
+	    width: 60%;
+	    margin-left: -30%;
+	    text-align: center;
+	    list-style: none;
+	    height: 50px;
+	}
+	.projetos .carousel-indicators li {
+	    display: inline-block;
+	    width: 20%;
+	    height: auto;
+	    text-indent: 0;
+	    cursor: pointer;
+	    background-color: rgb(10,95,127);
+	    border: 1px solid #fff;
+	    border-radius: 3px;
+	    padding: .6em;
+	    margin-right: 3px;
+	    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+	}
+	.projetos .carousel-indicators .active {
+	    width: 20%;
+	    height: auto;
+	    background: auto;
+	    margin-right: 3px;
+	}
+    .rodape .caminho { background: none; padding-top: 0; }
+}
+
+@media (min-width: 992px) {
+    .jumbotron { background: #000 url(../img/Office-6.jpg) top left no-repeat; }
+    .sobre .row div:last-child { padding-top: 1em; margin-top: 1em;}
+    .rodape .caminho h4 { font-size: 130%; }
+}
+
+@media (min-width: 1200px) {
+    .jumbotron { background: #000 url(../img/Office-0.jpg) top left no-repeat; }
+    .jumbotron h3 span { background: none; padding: 0; color: #f90; }
+    .rodape .caminho h4 { font-size: 150%; }
+}
+/*
+.sobre { padding: 0 0 30px 0; text-align: center; }
+.sobre ul { text-align: left; }
+.sobre .glyphicon { display: block; padding-bottom: 20px; }
+
+.parceiros { padding: 0 0 70px 0; background-color: #C13A00; color: #fff;}
+.parceiros h2 {
+	padding: 20px 0 20px 5px;
+	margin-bottom: 10px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.parceiros blockquote p { font-style: italic; font-size: 90%; text-shadow: 1px 1px 1px rgba(0,0,0,.4);}
+
+.jumbotron {
+	background: #000 url(../img/Office-0.jpg) top left no-repeat;
+	background-size: cover;
+	max-height: 600px;
+	padding: 60px 0;
+	margin: 0 0 30px 0;
+}
+.jumbotron .row h1, .jumbotron .row h3{
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(30,30,30,.5);
+	margin-top: 40px;
+	font-weight: normal;
+}
+.jumbotron .row h3 {
+	margin-top: 50px;
+	margin-bottom: 40px;
+	color: #f60;
+}
+.jumbotron h3 span { background: rgba(0,0,0,.5); padding: 5px; }
+.jumbotron .row a {
+	background: rgba(255,255, 255, .4);
+	border: 1px solid #2c3e50;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(30,30,30,.5);
+	padding: 15px 20px;
+}
+.btn-default { border-radius: 0;}
+.rodape { background: #062514; color: #fff; text-shadow: 1px 1px 1px rgba(0, 100, 0, .4); }
+.panel-default > .login { 
+	background-color:#0D779E;
+	background-image: -webkit-linear-gradient(transparent, rgba(0,0,0,.3));
+	background-image: -o-linear-gradient(transparent, rgba(0,0,0,.3));
+	background-image: linear-gradient(transparent, rgba(0,0,0,.3));
+}
+.rodape { text-align: center; }
+.rodape footer { margin: 25px 0; }
+.rodape footer h4 { margin-bottom: 20px; }
+.rodape footer h4 span { margin-right: 20px; }
+.rodape footer a { color: #fff; }
+.rodape footer a:hover { text-decoration: none; color: #de0;}
+.rodape .links { list-style: none; }
+.rodape .links li { margin-bottom: 10px; }
+.rodape .links li a { padding: 10px; }
+.login img { padding: 5px; }
+
+
+/*______________________________________________________________
+ |
+ | Media Queries
+ |______________________________________________________________
+*/
+/*
+@media (max-width: 992px) {
+	.jumbotron {
+		background: #000 url(../img/Office-6.jpg) top left no-repeat;
+		background-size: cover;
+		max-height: 500px;
+	}
+	.jumbotron h1 span, .jumbotron h3 span { background: rgba(0, 0, 0, .5); padding: 5px;}
+	.jumbotron .row h1, .jumbotron .row h3{
+		color: #fff;
+		text-shadow: 1px 1px 1px rgba(255,255,255,.5);
+		margin-top: 40px;
+		line-height: 37px;
+	}
+	.jumbotron .row h3 {
+		margin-top: 50px;
+		margin-bottom: 40px;
+		color: #f60;
+	}
+	.sobre h4 { padding-bottom: 15px; border-bottom: 1px solid #ddd; }
+	.sobre p, .sobre h4 { text-align: justify; }
+	.sobre .glyphicon {	display: inline; padding-bottom: auto; }
+
+	.rodape { text-align: left; }
+}
+
+@media (max-width: 768px) {
+	.jumbotron {
+		background: #000 url(../img/Office-2.jpg) top left no-repeat;
+		background-size: cover;
+		max-height: 500px;
+	}
+	.jumbotron h1 span, .jumbotron h3 span { background: rgba(0, 0, 0, .5); padding: 5px;}
+	.jumbotron .row h1, .jumbotron .row h3{
+		color: #fff;
+		text-shadow: 1px 1px 1px rgba(255,255,255,.5);
+		margin-top: 40px;
+		line-height: 37px;
+	}
+	.jumbotron .row h3 {
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+	.sobre h4 { padding-top: 15px; }
+	.sobre h4:first-child { padding-top: auto;}
+	.sobre p { text-align: justify;}
+
+	.parceiros h2 {
+		padding: 30px 0 20px 5px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #fff;
+	}
+
+	.rodape { text-align: left; }
+}
+*/
